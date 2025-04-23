@@ -9,8 +9,8 @@ const Layout = () => {
             <Navigation />
 
             <Routes>
-                <Route path="/gif/generateGifs" element={<GenerateGifs />} />
-                <Route path="/gif/favorites" element={<Favorites />} />
+                <Route path="/gif-app/generateGifs" element={<GenerateGifs />} />
+                <Route path="/gif-app/favorites" element={<Favorites />} />
             </Routes>
         </div>
     );
