@@ -1,12 +1,11 @@
 .search-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 25px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
 
-  .input {
+  .search-form__input {
     flex-grow: 1;
     flex-shrink: 1;
     min-width: 150px;
@@ -16,13 +15,13 @@
     border-radius: 10px;
     outline: none;
     transition: border 0.3s;
+
+    &:focus {
+      border-color: #6c63ff;
+    }
   }
 
-  .input:focus {
-    border-color: #6c63ff;
-  }
-
-  .button {
+  .search-form__button {
     flex: 0 1 auto;
     padding: 12px 20px;
     background: #6c63ff;
@@ -32,20 +31,19 @@
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s;
+
+    &:hover {
+      background: #574b90;
+    }
   }
 
-  .button:hover {
-    background: #574b90;
-  }
-
-  /* Мобильные устройства */
   @media (max-width: 500px) {
-    .input, .button {
+    flex-direction: column;
+    align-items: stretch;
+
+    .search-form__input,
+    .search-form__button {
       width: 100%;
     }
-
-    .search-form {
-      flex-direction: column;
-      align-items: stretch;
-    }
   }
+}

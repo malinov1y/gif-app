@@ -1,32 +1,28 @@
-.favorites-container {
+.media-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 5vw;
   text-align: center;
   color: #4a4a4a;
 }
-
-.favorites-title {
+.media-container .media-container__title {
   font-size: 2.5rem;
   margin-bottom: 30px;
   color: #333;
 }
-
-.favorites-error {
+.media-container .media-container__error {
   color: #e63946;
   margin-top: 10px;
   font-weight: bold;
 }
-
-.favorites-list {
+.media-container .media-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   margin-top: 30px;
 }
-
-.favorites-item {
+.media-container .media-list .media-item {
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -38,28 +34,24 @@
   align-items: center;
   position: relative;
 }
-
-.favorites-item:hover {
+.media-container .media-list .media-item:hover {
   transform: scale(1.05);
 }
-
-.favorites-item img {
+.media-container .media-list .media-item .media-item__image {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.favorites-buttons {
+.media-container .media-list .media-item .media-buttons {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 100%;
 }
-
-.favorites-buttons button {
+.media-container .media-list .media-item .media-buttons .media-buttons__button {
   background-color: #ff6f61;
   color: white;
   padding: 10px;
@@ -67,11 +59,9 @@
   border-radius: 5px;
   cursor: pointer;
 }
-
-.favorites-buttons button:hover {
+.media-container .media-list .media-item .media-buttons .media-buttons__button:hover {
   background-color: #f05d4a;
 }
-
-.favorites-buttons button:focus {
+.media-container .media-list .media-item .media-buttons .media-buttons__button:focus {
   outline: none;
 }/*# sourceMappingURL=favorites.css.map */

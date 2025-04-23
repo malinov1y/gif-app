@@ -23,20 +23,20 @@ const SearchForm = (props) => {
     return (
         <form onSubmit={handleSubmit} className="search-form">
           <input
-            className="input"
+            className="search-form__input"
             type="search"
             value={title}
             onChange={handleTitleChange}
-            placeholder="Введите тему GIF..."
+            placeholder="Введите тему..."
           />
           <input
-            className="input"
+            className="search-form__input"
             type="number"
             value={limit}
             onChange={handleLimitChange}
-            placeholder="Количество GIF"
+            placeholder="Количество"
           />
-          <button className="button" type="submit">Поиск</button>
+          <button className="search-form__button" type="submit">Поиск</button>
         </form>
       );
 };

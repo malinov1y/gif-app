@@ -4,37 +4,36 @@
   padding: 0;
 }
 
-.gif-generator {
+.sticker-generator {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 5vw;
   text-align: center;
   color: #333;
 
-  .gif-generator__title {
+  .sticker-generator__title {
     font-size: 2.5rem;
     margin-bottom: 30px;
     overflow-wrap: break-word;
   }
 
-  .gif-generator__error {
+  .sticker-generator__error {
     color: #e63946;
     margin-top: 10px;
     font-weight: bold;
   }
 }
 
-.gif-gallery {
+.sticker-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 30px;
-  width: 100%;
+  padding: 10px;
   max-height: 60vh;
   overflow-y: auto;
-  padding: 10px;
 
-  .gif-gallery__item {
+  .sticker-gallery__item {
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -43,17 +42,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
     &:hover {
       transform: scale(1.03);
     }
+  }
 
-    .gif-gallery__item-img {
-      width: 100%;
-      height: auto;
-      max-width: 100%;
-      border-radius: 10px;
-      object-fit: cover;
-    }
+  .sticker-gallery__image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
   }
 }
