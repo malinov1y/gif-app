@@ -1,0 +1,77 @@
+.favorites-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 5vw;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.favorites-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.favorites-error {
+  color: #e63946;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.favorites-item {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  width: 250px;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.favorites-item:hover {
+  transform: scale(1.05);
+}
+
+.favorites-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.favorites-buttons {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.favorites-buttons button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.favorites-buttons button:hover {
+  background-color: #f05d4a;
+}
+
+.favorites-buttons button:focus {
+  outline: none;
+}/*# sourceMappingURL=favorites.css.map */
