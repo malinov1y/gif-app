@@ -22,7 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-
-# Игнорируем конфиденциальные файлы
-src/config.js
